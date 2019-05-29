@@ -14,6 +14,12 @@
         "php": ">=5.5.0",
         "guzzlehttp/guzzle": "^6.2"
     },
+  "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/JustTesla/phpLibTelegram.git"
+        }
+  ],
     "autoload": {
         "psr-4": {
             "Telegram\\": "src/"
