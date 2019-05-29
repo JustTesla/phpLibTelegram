@@ -1,28 +1,19 @@
 {
-    "name": "justtesla/lib_telegram",
-    "description": "telegram php library",
-    "keywords": ["telegram", "im", "bot"],
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Just Tesla",
-            "email": "itsnork@gmail.com"
-        }
-    ],
-    "require": {
+  "name": "justtesla/lib_telegram",
+  "description": "telegram php library",
+  "authors": [
+    {
+      "name": "Just Tesla",
+      "email": "itsnork@gmail.com
+    }
+  ],
+  "require": {
         "php": ">=5.5.0",
         "guzzlehttp/guzzle": "^6.2"
-    },
-  "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/JustTesla/phpLibTelegram.git"
-        }
-  ],
-    "autoload": {
-        "psr-4": {
-            "Telegram\\": "src/"
-        }
+  },
+  "autoload": {
+    "psr-4": {
+      "Telegram\\": "src/"
     }
+  }
 }
