@@ -1,12 +1,6 @@
 {
   "name": "justtesla/lib_telegram",
   "description": "telegram php library",
-  "authors": [
-    {
-      "name": "Just Tesla",
-      "email": "itsnork@gmail.com
-    }
-  ],
   "require": {
         "php": ">=5.5.0",
         "guzzlehttp/guzzle": "^6.2"
