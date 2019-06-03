@@ -1,5 +1,5 @@
 {
-  "name": "justtesla/lib_telegram",
+  "name": "justtesla/phplibtelegram",
   "description": "telegram php library",
   "require": {
         "php": ">=5.5.0",
