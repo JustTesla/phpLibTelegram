@@ -34,6 +34,28 @@ class InlineKeyboard {
 		$row->end_row();
 		return $this;
 	}
+	
+	    function array_row($array) 
+    {
+        $array_prep = array();
+        $i = 0;
+        foreach ($array as $key => $value) {
+            $array_prep[] = ['text' => $key, 'callback_data' => "T:" . $value];
+            $i += 1;
+            if ($i == 2) {
+                $new_row = new InlineKeyboardRow($this);
+                $this->push($array_prep);
+                $array_prep = array();
+                $i = 0;
+            }
+        }
+        if ($i == 1) {
+            $new_row = new InlineKeyboardRow($this);
+            $this->push($array_prep);
+            $array_prep = array();
+        }
+        return $this;
+    }
 
 	function row_button($text, $request = NULL, $switch = NULL){
 		return $this->row()
